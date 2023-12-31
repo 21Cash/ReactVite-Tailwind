@@ -4,11 +4,7 @@ import { AuthStatus } from '~/components/auth/AuthProvider';
 import Logo from '~/components/shared/Logo/Logo';
 import NavItem from '~/components/shared/Nav/NavItem';
 
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Example', href: '/example' },
-  { name: 'Protected', href: '/protected' },
-];
+const navigation = [{ name: 'Home', href: '/' }];
 
 function navItems(isMobile = false) {
   return navigation.map((item) => (
@@ -30,11 +26,12 @@ function PrimaryNavbar() {
 }
 
 function SecondaryNavbar() {
-  return (
-    <div className="hidden md:flex items-center space-x-3">
-      <AuthStatus />
-    </div>
-  );
+  return <></>;
+  // return (
+  //   <div className="hidden md:flex items-center space-x-3">
+  //     <AuthStatus />
+  //   </div>
+  // );
 }
 
 type MobileMenuButtonProps = {

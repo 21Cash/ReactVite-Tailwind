@@ -41,6 +41,10 @@ function Routes() {
           element: <LoginScreen />,
         },
         {
+          path: 'Homepage',
+          element: <HomeScreen />,
+        },
+        {
           path: '*',
           element: <NotFoundScreen />,
         },
